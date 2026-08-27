@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: 'security',
     categoryLabel: 'Risk & Security Governance',
     tags: ['Risk Assessment', 'Threat Modeling', 'GDPR/CCPA'],
-    image: '/citibank-cybersecurity.jpg',
+    image: `${import.meta.env.BASE_URL}citibank-cybersecurity.jpg`,
     imagePosition: '50% 38%',
     challenge:
       'Citibank needed a clear, prioritized view of where it was exposed — across ten distinct threat vectors including DDoS attacks, ransomware, insider threats, third-party vendor risk, and poor data governance.',
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     category: 'trade',
     categoryLabel: 'Economic & BI Analysis',
     tags: ['Power BI', 'Excel', 'Data Analysis'],
-    image: '/brexit-uk-trade.jpg',
+    image: `${import.meta.env.BASE_URL}brexit-uk-trade.jpg`,
     imagePosition: '50% 32%',
     challenge:
       'Understanding Brexit’s real economic effect on UK trade required reconciling over a decade of import/export data and separating short-term noise from a genuine long-term trend.',
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     category: 'podcast',
     categoryLabel: 'Business Strategy',
     tags: ['Business Strategy', 'Project Management'],
-    image: '/find-your-flock.jpg',
+    image: `${import.meta.env.BASE_URL}find-your-flock.jpg`,
     imagePosition: '50% 52%',
     challenge:
       'Stevens Institute of Technology had no university-wide podcast — the opportunity was to define one from scratch, with a clear audience, purpose, and path to sustainability.',
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     category: 'strategy',
     categoryLabel: 'Strategic & Competitive Analysis',
     tags: ['Strategic Analysis', 'Competitive Positioning'],
-    image: '/ibm-strategy.jpg',
+    image: `${import.meta.env.BASE_URL}ibm-strategy.jpg`,
     challenge:
       'IBM’s shift from a hardware-centric business to a services-oriented one raised the question of whether its current strategy was positioned to win in the market it was moving toward.',
     approach:
