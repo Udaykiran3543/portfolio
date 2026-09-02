@@ -6,10 +6,11 @@ import { Skills } from './components/sections/Skills'
 import { Projects } from './components/sections/Projects'
 import { Education } from './components/sections/Education'
 import { Contact } from './components/sections/Contact'
+import { KineticGrid } from './components/ui/kinetic-grid'
 
 function App() {
   return (
-    <>
+    <KineticGrid>
       <Navbar />
       <main id="main">
         <Hero />
@@ -20,7 +21,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </KineticGrid>
   )
 }
 

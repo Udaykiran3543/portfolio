@@ -1,10 +1,12 @@
 import { Mail, Link, Phone, MapPin } from 'lucide-react'
 import { site, navItems } from '../../data/site'
+import { GlowCard } from '../ui/spotlight-card'
 
 export function Footer() {
   return (
     <footer className="border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6 py-12">
+        <GlowCard glowColor="blue" customSize className="w-full !rounded-2xl !p-8">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
             <p className="font-display text-lg font-semibold text-text">{site.shortName}</p>
@@ -57,6 +59,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
+        </GlowCard>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-sm text-muted">
           © {new Date().getFullYear()} {site.name}. Built with React, TypeScript & Tailwind CSS.

@@ -1,13 +1,16 @@
+import { GlowCard } from './spotlight-card'
+
 type StatChipProps = {
   value: string
   label: string
+  glowColor?: 'blue' | 'purple' | 'green' | 'red' | 'orange'
 }
 
-export function StatChip({ value, label }: StatChipProps) {
+export function StatChip({ value, label, glowColor = 'purple' }: StatChipProps) {
   return (
-    <div className="rounded-xl border border-white/10 bg-surface p-4">
+    <GlowCard glowColor={glowColor} customSize className="h-full w-full !rounded-xl !p-4">
       <p className="text-2xl font-semibold text-gradient">{value}</p>
       <p className="mt-1 text-sm text-muted">{label}</p>
-    </div>
+    </GlowCard>
   )
 }

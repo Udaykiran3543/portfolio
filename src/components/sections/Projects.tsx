@@ -10,7 +10,7 @@ export function Projects() {
       label="Projects"
       eyebrow="Selected Work"
       title="Projects"
-      description="Hands-on work spanning cybersecurity risk, economic analysis, and strategic consulting — the full analytics lifecycle from data to decision."
+      description="Hands-on work spanning cybersecurity risk, economic analysis, and strategic consulting, the full analytics lifecycle from data to decision."
       className="border-t border-white/10"
     >
       <AnimatedSection className="grid gap-6 sm:grid-cols-2">

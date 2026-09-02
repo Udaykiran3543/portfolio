@@ -3,6 +3,7 @@ import { Mail, Link, MapPin, Download } from 'lucide-react'
 import { site } from '../../data/site'
 import { Avatar } from '../ui/Avatar'
 import { Button } from '../ui/Button'
+import { GlowCard } from '../ui/spotlight-card'
 
 export function Hero() {
   return (
@@ -16,7 +17,14 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center">
+      <div className="relative mx-auto max-w-6xl px-6">
+      <GlowCard
+        glowColor="purple"
+        customSize
+        glowSize={650}
+        className="mx-auto w-full max-w-6xl !p-12 md:!p-20"
+      >
+      <div className="flex flex-col items-center gap-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,6 +96,8 @@ export function Hero() {
             {site.location}
           </li>
         </motion.ul>
+      </div>
+      </GlowCard>
       </div>
     </section>
   )

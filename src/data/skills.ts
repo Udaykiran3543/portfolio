@@ -10,21 +10,21 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    id: 'languages',
-    label: 'Languages & Querying',
-    icon: Code2,
-    skills: ['Python', 'SQL', 'HTML', 'CSS'],
-  },
-  {
     id: 'bi',
     label: 'BI & Visualization',
     icon: BarChart3,
-    skills: ['Power BI', 'Tableau'],
+    skills: ['Power BI', 'Tableau', 'Excel', 'Looker Studio'],
+  },
+  {
+    id: 'languages',
+    label: 'Languages & Libraries',
+    icon: Code2,
+    skills: ['SQL', 'Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'HTML', 'CSS'],
   },
   {
     id: 'tools',
     label: 'Tools & Platforms',
     icon: Server,
-    skills: ['Docker', 'AWS', 'Jenkins', 'Linux'],
+    skills: ['AWS', 'Docker', 'Jenkins', 'Linux'],
   },
 ]

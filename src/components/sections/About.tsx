@@ -4,10 +4,10 @@ import { StatChip } from '../ui/StatChip'
 import { site } from '../../data/site'
 
 const stats = [
-  { value: '13 yrs', label: 'of UK trade data analyzed' },
-  { value: '10', label: 'threat vectors assessed' },
-  { value: '6', label: 'asset categories mapped' },
-  { value: '4', label: 'end-to-end analytics projects' },
+  { value: '13 yrs', label: 'of UK trade data analyzed', glowColor: 'blue' as const },
+  { value: '10', label: 'threat vectors assessed', glowColor: 'red' as const },
+  { value: '6', label: 'asset categories mapped', glowColor: 'purple' as const },
+  { value: '4', label: 'end-to-end analytics projects', glowColor: 'green' as const },
 ]
 
 export function About() {
@@ -29,7 +29,7 @@ export function About() {
         <AnimatedSection as="ul" className="grid grid-cols-2 gap-4">
           {stats.map((stat) => (
             <AnimatedItem as="li" key={stat.label}>
-              <StatChip value={stat.value} label={stat.label} />
+              <StatChip value={stat.value} label={stat.label} glowColor={stat.glowColor} />
             </AnimatedItem>
           ))}
         </AnimatedSection>

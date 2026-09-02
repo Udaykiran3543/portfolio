@@ -1,7 +1,10 @@
 import { SectionContainer } from '../layout/SectionContainer'
 import { AnimatedSection, AnimatedItem } from '../ui/AnimatedSection'
 import { Pill } from '../ui/Pill'
+import { GlowCard } from '../ui/spotlight-card'
 import { skillGroups } from '../../data/skills'
+
+const groupGlowColors = ['purple', 'blue', 'green'] as const
 
 export function Skills() {
   return (
@@ -14,19 +17,25 @@ export function Skills() {
       className="border-t border-white/10"
     >
       <AnimatedSection className="grid gap-8 sm:grid-cols-3">
-        {skillGroups.map((group) => {
+        {skillGroups.map((group, index) => {
           const Icon = group.icon
           return (
             <AnimatedItem key={group.id}>
-              <div className="mb-4 flex items-center gap-2">
-                <Icon className="h-5 w-5 text-purple-400" aria-hidden="true" />
-                <h3 className="text-sm font-semibold text-text">{group.label}</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {group.skills.map((skill) => (
-                  <Pill key={skill}>{skill}</Pill>
-                ))}
-              </div>
+              <GlowCard
+                glowColor={groupGlowColors[index % groupGlowColors.length]}
+                customSize
+                className="h-full w-full"
+              >
+                <div className="mb-4 flex items-center gap-2">
+                  <Icon className="h-5 w-5 text-purple-400" aria-hidden="true" />
+                  <h3 className="text-sm font-semibold text-text">{group.label}</h3>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {group.skills.map((skill) => (
+                    <Pill key={skill}>{skill}</Pill>
+                  ))}
+                </div>
+              </GlowCard>
             </AnimatedItem>
           )
         })}
