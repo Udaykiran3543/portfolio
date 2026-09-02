@@ -13,13 +13,13 @@ export const skillGroups: SkillGroup[] = [
     id: 'bi',
     label: 'BI & Visualization',
     icon: BarChart3,
-    skills: ['Power BI', 'Tableau', 'Excel', 'Looker Studio', 'S3', 'BigQuery'],
+    skills: ['Power BI', 'Tableau', 'Excel', 'Looker Studio'],
   },
   {
     id: 'languages',
     label: 'Languages & Libraries',
     icon: Code2,
-    skills: ['SQL', 'Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'HTML', 'CSS'],
+    skills: ['SQL', 'Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'HTML', 'CSS', 'S3', 'BigQuery'],
   },
   {
     id: 'tools',
